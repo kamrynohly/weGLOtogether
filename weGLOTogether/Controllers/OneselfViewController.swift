@@ -22,6 +22,11 @@ class OneselfViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+//    To restrict what articles come from where?
+//    Restrict your search to articles from either the Sports or Foreign desk:
+//    fq=news_desk:("Sports" "Foreign")
+//    fq=news_desk:("Books" "Health & Fitness"      "Home & Garden")
+//
     func getNYTAPIData(url: String, parameters: [String : Any]) {
 
                
