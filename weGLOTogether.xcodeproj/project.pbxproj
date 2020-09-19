@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9A065C2C2515AC2E00C0B327 /* weGLOTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weGLOTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A065C2C2515AC2E00C0B327 /* weGLOtogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weGLOtogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A065C2F2515AC2E00C0B327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A065C312515AC2E00C0B327 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9A065C332515AC2E00C0B327 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		9A065C2D2515AC2E00C0B327 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A065C2C2515AC2E00C0B327 /* weGLOTogether.app */,
+				9A065C2C2515AC2E00C0B327 /* weGLOtogether.app */,
 				9A065C452515AC3600C0B327 /* weGLOTogetherTests.xctest */,
 				9A065C502515AC3600C0B327 /* weGLOTogetherUITests.xctest */,
 			);
@@ -148,7 +148,7 @@
 			);
 			name = weGLOTogether;
 			productName = weGLOTogether;
-			productReference = 9A065C2C2515AC2E00C0B327 /* weGLOTogether.app */;
+			productReference = 9A065C2C2515AC2E00C0B327 /* weGLOtogether.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9A065C442515AC3600C0B327 /* weGLOTogetherTests */ = {
@@ -446,7 +446,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KamrynOhly.weGLOTogether;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = weGLOtogether;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,7 +464,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KamrynOhly.weGLOTogether;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = weGLOtogether;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
