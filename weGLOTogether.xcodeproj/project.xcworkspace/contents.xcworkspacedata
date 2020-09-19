@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:weGLOTogether.xcodeproj">
+      location = "self:/Users/kamrynohly/Desktop/weGLOTogether/weGLOTogether.xcodeproj">
    </FileRef>
 </Workspace>
