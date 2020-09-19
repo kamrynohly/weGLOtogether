@@ -21,36 +21,49 @@
                                 <color key="textColor" red="0.58039215686274503" green="0.74117647058823533" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="K8y-hX-GXW">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="K8y-hX-GXW">
                                 <rect key="frame" x="60" y="557.5" width="294" height="244.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-yL-cGh">
-                                        <rect key="frame" x="0.0" y="0.0" width="294" height="78"/>
-                                        <color key="backgroundColor" red="0.36470588235294116" green="0.086274509803921567" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="G">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FO2-ac-e9O">
+                                        <rect key="frame" x="0.0" y="0.0" width="144.5" height="244.5"/>
+                                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Virtual Assistant"/>
                                         <connections>
-                                            <segue destination="4ea-lb-srT" kind="show" id="25U-wW-rfe"/>
+                                            <segue destination="GFN-hG-1gb" kind="show" id="Xio-KU-YtP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCe-1u-f7D">
-                                        <rect key="frame" x="0.0" y="83" width="294" height="78.5"/>
-                                        <color key="backgroundColor" red="0.58039215686274503" green="0.74117647058823533" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="L"/>
-                                        <connections>
-                                            <segue destination="bcP-xe-kO5" kind="show" id="zMH-e8-eNt"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7c-Ie-t4g">
-                                        <rect key="frame" x="0.0" y="166.5" width="294" height="78"/>
-                                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="O"/>
-                                        <connections>
-                                            <segue destination="HT2-Ph-rBS" kind="show" id="mYa-Vj-2ve"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EmV-m5-2B7">
+                                        <rect key="frame" x="149.5" y="0.0" width="144.5" height="244.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-yL-cGh">
+                                                <rect key="frame" x="0.0" y="0.0" width="144.5" height="78"/>
+                                                <color key="backgroundColor" red="0.36470588235294116" green="0.086274509803921567" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="G">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="4ea-lb-srT" kind="show" id="25U-wW-rfe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCe-1u-f7D">
+                                                <rect key="frame" x="0.0" y="83" width="144.5" height="78.5"/>
+                                                <color key="backgroundColor" red="0.58039215686274503" green="0.74117647058823533" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="L"/>
+                                                <connections>
+                                                    <segue destination="bcP-xe-kO5" kind="show" id="zMH-e8-eNt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7c-Ie-t4g">
+                                                <rect key="frame" x="0.0" y="166.5" width="144.5" height="78"/>
+                                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="O"/>
+                                                <connections>
+                                                    <segue destination="HT2-Ph-rBS" kind="show" id="mYa-Vj-2ve"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who do you want to support today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OP-z6-ESJ">
@@ -82,6 +95,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
+        </scene>
+        <!--IBM View Controller-->
+        <scene sceneID="feQ-wo-2xp">
+            <objects>
+                <viewController id="GFN-hG-1gb" userLabel="IBM View Controller" customClass="IBMViewController" customModule="weGLOtogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mpp-dm-d0U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="shE-J0-RlW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v9q-ba-m4k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zLj-AF-sYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="844"/>
         </scene>
         <!--Oneself View Controller-->
         <scene sceneID="n1P-8N-BYt">
