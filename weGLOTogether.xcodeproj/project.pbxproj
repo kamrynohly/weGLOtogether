@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63C95A124A196B49B4596306 /* Pods_weGLOTogetherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799BF276F1A1086F3AA20764 /* Pods_weGLOTogetherTests.framework */; };
+		6A9268D7CDB7129D2E18F634 /* Pods_weGLOTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA2B658DA1C55D7BF23B03F /* Pods_weGLOTogether.framework */; };
+		6D3DE57F542A775775CAF75C /* Pods_weGLOTogether_weGLOTogetherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732AC535ABD852D57CF78F92 /* Pods_weGLOTogether_weGLOTogetherUITests.framework */; };
 		9A065C302515AC2E00C0B327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A065C2F2515AC2E00C0B327 /* AppDelegate.swift */; };
 		9A065C322515AC2E00C0B327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A065C312515AC2E00C0B327 /* SceneDelegate.swift */; };
 		9A065C342515AC2E00C0B327 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A065C332515AC2E00C0B327 /* HomeViewController.swift */; };
@@ -39,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		070BEB98402A79A668E5CE7E /* Pods-weGLOTogether-weGLOTogetherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weGLOTogether-weGLOTogetherUITests.release.xcconfig"; path = "Target Support Files/Pods-weGLOTogether-weGLOTogetherUITests/Pods-weGLOTogether-weGLOTogetherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1AA2B658DA1C55D7BF23B03F /* Pods_weGLOTogether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weGLOTogether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4352143C6FBE399EDE0BE9A3 /* Pods-weGLOTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weGLOTogether.debug.xcconfig"; path = "Target Support Files/Pods-weGLOTogether/Pods-weGLOTogether.debug.xcconfig"; sourceTree = "<group>"; };
+		732AC535ABD852D57CF78F92 /* Pods_weGLOTogether_weGLOTogetherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weGLOTogether_weGLOTogetherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		799BF276F1A1086F3AA20764 /* Pods_weGLOTogetherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weGLOTogetherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C3A5C39407E8521A693EFC /* Pods-weGLOTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weGLOTogether.release.xcconfig"; path = "Target Support Files/Pods-weGLOTogether/Pods-weGLOTogether.release.xcconfig"; sourceTree = "<group>"; };
 		9A065C2C2515AC2E00C0B327 /* weGLOtogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weGLOtogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A065C2F2515AC2E00C0B327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A065C312515AC2E00C0B327 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +66,9 @@
 		9A065C622515DAC100C0B327 /* OneselfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneselfViewController.swift; sourceTree = "<group>"; };
 		9A065C672515DBCE00C0B327 /* LocalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalViewController.swift; sourceTree = "<group>"; };
 		9A065C692515DC0C00C0B327 /* GlobalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalViewController.swift; sourceTree = "<group>"; };
+		A7BA3969387DEC3F735E3798 /* Pods-weGLOTogether-weGLOTogetherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weGLOTogether-weGLOTogetherUITests.debug.xcconfig"; path = "Target Support Files/Pods-weGLOTogether-weGLOTogetherUITests/Pods-weGLOTogether-weGLOTogetherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC208D83D47B7931AF7932B0 /* Pods-weGLOTogetherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weGLOTogetherTests.debug.xcconfig"; path = "Target Support Files/Pods-weGLOTogetherTests/Pods-weGLOTogetherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F777946A7EFB172039024695 /* Pods-weGLOTogetherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weGLOTogetherTests.release.xcconfig"; path = "Target Support Files/Pods-weGLOTogetherTests/Pods-weGLOTogetherTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9268D7CDB7129D2E18F634 /* Pods_weGLOTogether.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C95A124A196B49B4596306 /* Pods_weGLOTogetherTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +92,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3DE57F542A775775CAF75C /* Pods_weGLOTogether_weGLOTogetherUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CB1837889188F941F7BEEFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AA2B658DA1C55D7BF23B03F /* Pods_weGLOTogether.framework */,
+				732AC535ABD852D57CF78F92 /* Pods_weGLOTogether_weGLOTogetherUITests.framework */,
+				799BF276F1A1086F3AA20764 /* Pods_weGLOTogetherTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D7446CAF8871AF8607A9D63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4352143C6FBE399EDE0BE9A3 /* Pods-weGLOTogether.debug.xcconfig */,
+				80C3A5C39407E8521A693EFC /* Pods-weGLOTogether.release.xcconfig */,
+				A7BA3969387DEC3F735E3798 /* Pods-weGLOTogether-weGLOTogetherUITests.debug.xcconfig */,
+				070BEB98402A79A668E5CE7E /* Pods-weGLOTogether-weGLOTogetherUITests.release.xcconfig */,
+				AC208D83D47B7931AF7932B0 /* Pods-weGLOTogetherTests.debug.xcconfig */,
+				F777946A7EFB172039024695 /* Pods-weGLOTogetherTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9A065C232515AC2E00C0B327 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +130,8 @@
 				9A065C482515AC3600C0B327 /* weGLOTogetherTests */,
 				9A065C532515AC3600C0B327 /* weGLOTogetherUITests */,
 				9A065C2D2515AC2E00C0B327 /* Products */,
+				8D7446CAF8871AF8607A9D63 /* Pods */,
+				3CB1837889188F941F7BEEFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A065C592515AC3600C0B327 /* Build configuration list for PBXNativeTarget "weGLOTogether" */;
 			buildPhases = (
+				C3C1AB3F28BE4BEA4004C56D /* [CP] Check Pods Manifest.lock */,
 				9A065C282515AC2E00C0B327 /* Sources */,
 				9A065C292515AC2E00C0B327 /* Frameworks */,
 				9A065C2A2515AC2E00C0B327 /* Resources */,
+				D81437C57C56587CD8C014F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,6 +231,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A065C5C2515AC3600C0B327 /* Build configuration list for PBXNativeTarget "weGLOTogetherTests" */;
 			buildPhases = (
+				8D72D78046CE82BEB2AB3106 /* [CP] Check Pods Manifest.lock */,
 				9A065C412515AC3600C0B327 /* Sources */,
 				9A065C422515AC3600C0B327 /* Frameworks */,
 				9A065C432515AC3600C0B327 /* Resources */,
@@ -206,9 +250,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A065C5F2515AC3600C0B327 /* Build configuration list for PBXNativeTarget "weGLOTogetherUITests" */;
 			buildPhases = (
+				54D4073C47D25CF674F072EF /* [CP] Check Pods Manifest.lock */,
 				9A065C4C2515AC3600C0B327 /* Sources */,
 				9A065C4D2515AC3600C0B327 /* Frameworks */,
 				9A065C4E2515AC3600C0B327 /* Resources */,
+				50166839FD74CE2277EBAA30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +335,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50166839FD74CE2277EBAA30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weGLOTogether-weGLOTogetherUITests/Pods-weGLOTogether-weGLOTogetherUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weGLOTogether-weGLOTogetherUITests/Pods-weGLOTogether-weGLOTogetherUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-weGLOTogether-weGLOTogetherUITests/Pods-weGLOTogether-weGLOTogetherUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54D4073C47D25CF674F072EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weGLOTogether-weGLOTogetherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D72D78046CE82BEB2AB3106 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weGLOTogetherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3C1AB3F28BE4BEA4004C56D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weGLOTogether-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D81437C57C56587CD8C014F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weGLOTogether/Pods-weGLOTogether-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weGLOTogether/Pods-weGLOTogether-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-weGLOTogether/Pods-weGLOTogether-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A065C282515AC2E00C0B327 /* Sources */ = {
@@ -472,6 +621,7 @@
 		};
 		9A065C5A2515AC3600C0B327 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4352143C6FBE399EDE0BE9A3 /* Pods-weGLOTogether.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +640,7 @@
 		};
 		9A065C5B2515AC3600C0B327 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C3A5C39407E8521A693EFC /* Pods-weGLOTogether.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +659,7 @@
 		};
 		9A065C5D2515AC3600C0B327 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC208D83D47B7931AF7932B0 /* Pods-weGLOTogetherTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +682,7 @@
 		};
 		9A065C5E2515AC3600C0B327 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F777946A7EFB172039024695 /* Pods-weGLOTogetherTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -552,6 +705,7 @@
 		};
 		9A065C602515AC3600C0B327 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7BA3969387DEC3F735E3798 /* Pods-weGLOTogether-weGLOTogetherUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -572,6 +726,7 @@
 		};
 		9A065C612515AC3600C0B327 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 070BEB98402A79A668E5CE7E /* Pods-weGLOTogether-weGLOTogetherUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
