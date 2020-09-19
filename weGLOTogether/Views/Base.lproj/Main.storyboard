@@ -217,22 +217,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="465-o7-GHX">
-                                <rect key="frame" x="30" y="353" width="354" height="380"/>
+                                <rect key="frame" x="10" y="399" width="394" height="380"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CustomBusinessCell" id="8J4-9P-1F3">
-                                        <rect key="frame" x="0.0" y="28" width="354" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BusinessCell" id="VYa-yf-Thr" customClass="CustomBusinessCell" customModule="weGLOtogether" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="394" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8J4-9P-1F3" id="9zw-D9-rAm">
-                                            <rect key="frame" x="0.0" y="0.0" width="354" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VYa-yf-Thr" id="U8e-VZ-r0f">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gl-ex-O8e">
-                                <rect key="frame" x="10" y="152" width="394" height="193"/>
+                                <rect key="frame" x="10" y="113" width="394" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Businesses have struggled now more than ever when it comes to COVID-19, meaning that communities and supporting local, small firms is crucial to helping our communities. Below, find small businesses near you to check out &amp; assist during this unprecedented time!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -240,11 +240,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufn-mJ-GbT">
-                                <rect key="frame" x="69" y="787" width="276" height="30"/>
+                                <rect key="frame" x="69" y="804" width="276" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Support More Community Organizations"/>
                                 <connections>
                                     <segue destination="pZA-nH-8YW" kind="show" id="vrk-0X-jLE"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o7o-KL-v2l">
+                                <rect key="frame" x="20" y="299" width="236" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter business type (ex. restaurant)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0YO-fC-hDF">
+                                <rect key="frame" x="20" y="341" width="236" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTA-vP-h4L">
+                                <rect key="frame" x="310" y="325" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Let's go!"/>
+                                <connections>
+                                    <action selector="locationChangedPressed:" destination="bcP-xe-kO5" eventType="touchUpInside" id="OxS-gN-JX8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -254,11 +274,13 @@
                     <navigationItem key="navigationItem" id="Hco-lh-YzQ"/>
                     <connections>
                         <outlet property="businessTableView" destination="465-o7-GHX" id="CiT-NW-ulY"/>
+                        <outlet property="businessTypeTextField" destination="0YO-fC-hDF" id="8KN-Wd-XcM"/>
+                        <outlet property="locationTextField" destination="o7o-KL-v2l" id="Ohr-sy-K9P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbC-P8-TOB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1848" y="135"/>
+            <point key="canvasLocation" x="1847.826086956522" y="134.59821428571428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BaG-Db-d1E">

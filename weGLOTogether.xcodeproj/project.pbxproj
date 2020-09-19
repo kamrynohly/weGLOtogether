@@ -23,8 +23,9 @@
 		9A065C682515DBCE00C0B327 /* LocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A065C672515DBCE00C0B327 /* LocalViewController.swift */; };
 		9A065C6A2515DC0C00C0B327 /* GlobalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A065C692515DC0C00C0B327 /* GlobalViewController.swift */; };
 		9A94671A25165C8200632DAF /* CustomBusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94671825165C8200632DAF /* CustomBusinessCell.swift */; };
-		9A94671B25165C8200632DAF /* CustomBusinessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A94671925165C8200632DAF /* CustomBusinessCell.xib */; };
+		9A94671B25165C8200632DAF /* BusinessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A94671925165C8200632DAF /* BusinessCell.xib */; };
 		9A94671E2516875700632DAF /* IBMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94671D2516875700632DAF /* IBMViewController.swift */; };
+		9A9467202516927700632DAF /* BusinessData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94671F2516927700632DAF /* BusinessData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +71,9 @@
 		9A065C672515DBCE00C0B327 /* LocalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalViewController.swift; sourceTree = "<group>"; };
 		9A065C692515DC0C00C0B327 /* GlobalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalViewController.swift; sourceTree = "<group>"; };
 		9A94671825165C8200632DAF /* CustomBusinessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBusinessCell.swift; sourceTree = "<group>"; };
-		9A94671925165C8200632DAF /* CustomBusinessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomBusinessCell.xib; sourceTree = "<group>"; };
+		9A94671925165C8200632DAF /* BusinessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessCell.xib; sourceTree = "<group>"; };
 		9A94671D2516875700632DAF /* IBMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMViewController.swift; sourceTree = "<group>"; };
+		9A94671F2516927700632DAF /* BusinessData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessData.swift; sourceTree = "<group>"; };
 		A7BA3969387DEC3F735E3798 /* Pods-weGLOTogether-weGLOTogetherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weGLOTogether-weGLOTogetherUITests.debug.xcconfig"; path = "Target Support Files/Pods-weGLOTogether-weGLOTogetherUITests/Pods-weGLOTogether-weGLOTogetherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC208D83D47B7931AF7932B0 /* Pods-weGLOTogetherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weGLOTogetherTests.debug.xcconfig"; path = "Target Support Files/Pods-weGLOTogetherTests/Pods-weGLOTogetherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F777946A7EFB172039024695 /* Pods-weGLOTogetherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weGLOTogetherTests.release.xcconfig"; path = "Target Support Files/Pods-weGLOTogetherTests/Pods-weGLOTogetherTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		9A065C662515DB6D00C0B327 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9A94671F2516927700632DAF /* BusinessData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,7 +218,7 @@
 		9A94671C25165C9500632DAF /* CustomBusinessCell */ = {
 			isa = PBXGroup;
 			children = (
-				9A94671925165C8200632DAF /* CustomBusinessCell.xib */,
+				9A94671925165C8200632DAF /* BusinessCell.xib */,
 				9A94671825165C8200632DAF /* CustomBusinessCell.swift */,
 			);
 			name = CustomBusinessCell;
@@ -332,7 +335,7 @@
 			files = (
 				9A065C3F2515AC3600C0B327 /* LaunchScreen.storyboard in Resources */,
 				9A065C3C2515AC3600C0B327 /* Assets.xcassets in Resources */,
-				9A94671B25165C8200632DAF /* CustomBusinessCell.xib in Resources */,
+				9A94671B25165C8200632DAF /* BusinessCell.xib in Resources */,
 				9A065C372515AC2E00C0B327 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +467,7 @@
 				9A065C682515DBCE00C0B327 /* LocalViewController.swift in Sources */,
 				9A065C342515AC2E00C0B327 /* HomeViewController.swift in Sources */,
 				9A94671E2516875700632DAF /* IBMViewController.swift in Sources */,
+				9A9467202516927700632DAF /* BusinessData.swift in Sources */,
 				9A94671A25165C8200632DAF /* CustomBusinessCell.swift in Sources */,
 				9A065C302515AC2E00C0B327 /* AppDelegate.swift in Sources */,
 				9A065C6A2515DC0C00C0B327 /* GlobalViewController.swift in Sources */,
