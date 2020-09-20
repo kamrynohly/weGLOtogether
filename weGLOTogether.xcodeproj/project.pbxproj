@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E3C8D992517144D005DDF9C /* SpendTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3C8D982517144D005DDF9C /* SpendTimeViewController.swift */; };
 		63C95A124A196B49B4596306 /* Pods_weGLOTogetherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799BF276F1A1086F3AA20764 /* Pods_weGLOTogetherTests.framework */; };
 		6A9268D7CDB7129D2E18F634 /* Pods_weGLOTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA2B658DA1C55D7BF23B03F /* Pods_weGLOTogether.framework */; };
 		6D3DE57F542A775775CAF75C /* Pods_weGLOTogether_weGLOTogetherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732AC535ABD852D57CF78F92 /* Pods_weGLOTogether_weGLOTogetherUITests.framework */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		070BEB98402A79A668E5CE7E /* Pods-weGLOTogether-weGLOTogetherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weGLOTogether-weGLOTogetherUITests.release.xcconfig"; path = "Target Support Files/Pods-weGLOTogether-weGLOTogetherUITests/Pods-weGLOTogether-weGLOTogetherUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1AA2B658DA1C55D7BF23B03F /* Pods_weGLOTogether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weGLOTogether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E3C8D982517144D005DDF9C /* SpendTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendTimeViewController.swift; sourceTree = "<group>"; };
 		4352143C6FBE399EDE0BE9A3 /* Pods-weGLOTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weGLOTogether.debug.xcconfig"; path = "Target Support Files/Pods-weGLOTogether/Pods-weGLOTogether.debug.xcconfig"; sourceTree = "<group>"; };
 		732AC535ABD852D57CF78F92 /* Pods_weGLOTogether_weGLOTogetherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weGLOTogether_weGLOTogetherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		799BF276F1A1086F3AA20764 /* Pods_weGLOTogetherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weGLOTogetherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +207,7 @@
 				9A94671D2516875700632DAF /* IBMViewController.swift */,
 				9A9467212516B45400632DAF /* PhysicalHealthTableViewController.swift */,
 				9A9467232516B50400632DAF /* MentalHealthTableViewController.swift */,
+				2E3C8D982517144D005DDF9C /* SpendTimeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				9A9467292516B65200632DAF /* CustomArticleCell.swift in Sources */,
 				9A065C682515DBCE00C0B327 /* LocalViewController.swift in Sources */,
 				9A065C342515AC2E00C0B327 /* HomeViewController.swift in Sources */,
+				2E3C8D992517144D005DDF9C /* SpendTimeViewController.swift in Sources */,
 				9A94671E2516875700632DAF /* IBMViewController.swift in Sources */,
 				9A9467202516927700632DAF /* BusinessData.swift in Sources */,
 				9A94671A25165C8200632DAF /* CustomBusinessCell.swift in Sources */,
