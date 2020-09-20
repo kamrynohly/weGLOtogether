@@ -29,9 +29,9 @@ class MentalHealthTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
-    }
+//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 300
+//    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -48,6 +48,20 @@ class MentalHealthTableViewController: UITableViewController {
          let cell = tableView.dequeueReusableCell(withIdentifier: "customArticleCell", for: indexPath) as! CustomArticleCell
         cell.articleLeadingPara.text = articlesArray[indexPath.row].leadingParagraph
         cell.articleTitle.text = articlesArray[indexPath.row].title
+        
+        let colorArray = ["Indigo", "Purple", "Blue"]
+                   let colorNumber = indexPath.row % 3
+                   
+                   if colorArray[colorNumber] == "Indigo" {
+                    cell.backgroundColor = UIColor.systemIndigo
+                   }
+                   else if colorArray[colorNumber] == "Purple" {
+                    cell.backgroundColor = UIColor.purple
+                   }
+                   else  {
+                    cell.backgroundColor = UIColor.blue
+                   }
+                
         
         return cell
     }

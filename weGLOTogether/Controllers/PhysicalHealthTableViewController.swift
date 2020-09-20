@@ -44,6 +44,19 @@ class PhysicalHealthTableViewController: UITableViewController {
         cell.articleLeadingPara.text = articlesArray[indexPath.row].leadingParagraph
         cell.articleTitle.text = articlesArray[indexPath.row].title
         
+        let colorArray = ["Indigo", "Purple", "Blue"]
+                         let colorNumber = indexPath.row % 3
+                         
+                         if colorArray[colorNumber] == "Indigo" {
+                          cell.backgroundColor = UIColor.systemIndigo
+                         }
+                         else if colorArray[colorNumber] == "Purple" {
+                          cell.backgroundColor = UIColor.purple
+                         }
+                         else  {
+                          cell.backgroundColor = UIColor.blue
+                         }
+        
         return cell
     }
     
