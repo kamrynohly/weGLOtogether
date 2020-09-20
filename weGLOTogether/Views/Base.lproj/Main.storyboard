@@ -139,6 +139,9 @@
                                                 <state key="normal" title="Physical Health">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Eks-Uq-Yrr" kind="show" id="jn7-6M-azM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ac-gO-cNG">
                                                 <rect key="frame" x="187.5" y="0.0" width="186.5" height="168.5"/>
@@ -147,6 +150,9 @@
                                                 <state key="normal" title="Mental Health">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="3qP-xV-PDa" kind="show" id="Opc-2h-qbK"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -200,6 +206,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fzO-fd-7uS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1847.826086956522" y="844.41964285714278"/>
+        </scene>
+        <!--Physical Health Table View Controller-->
+        <scene sceneID="VJz-jt-N4M">
+            <objects>
+                <tableViewController id="Eks-Uq-Yrr" userLabel="Physical Health Table View Controller" customClass="PhysicalHealthTableViewController" customModule="weGLOtogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GeS-ZQ-vNI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleCell" id="XQ1-cx-OJ2" customClass="CustomArticleCell" customModule="weGLOtogether" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XQ1-cx-OJ2" id="Uoo-8z-7mu">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Eks-Uq-Yrr" id="CMu-mo-HjL"/>
+                            <outlet property="delegate" destination="Eks-Uq-Yrr" id="KB8-kn-Gis"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="6SK-gD-dCn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z1L-4p-OGs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2707" y="844"/>
+        </scene>
+        <!--Mental Health Table View Controller-->
+        <scene sceneID="N8b-oa-CoN">
+            <objects>
+                <tableViewController id="3qP-xV-PDa" userLabel="Mental Health Table View Controller" customClass="MentalHealthTableViewController" customModule="weGLOtogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cVt-sI-sjs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleCell" id="vNV-TS-cWF" customClass="CustomArticleCell" customModule="weGLOtogether" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vNV-TS-cWF" id="Urj-8t-otU">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3qP-xV-PDa" id="v3Q-Xs-gMx"/>
+                            <outlet property="delegate" destination="3qP-xV-PDa" id="2Nn-kI-dFK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ReT-Pc-oeR"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfJ-dE-RT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3493" y="844"/>
         </scene>
         <!--Local View Controller-->
         <scene sceneID="j6y-aO-sHg">
@@ -350,7 +414,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H4w-Ua-rdB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+            <point key="canvasLocation" x="303" y="118"/>
         </scene>
     </scenes>
 </document>

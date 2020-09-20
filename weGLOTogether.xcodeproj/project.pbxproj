@@ -26,6 +26,11 @@
 		9A94671B25165C8200632DAF /* BusinessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A94671925165C8200632DAF /* BusinessCell.xib */; };
 		9A94671E2516875700632DAF /* IBMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94671D2516875700632DAF /* IBMViewController.swift */; };
 		9A9467202516927700632DAF /* BusinessData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94671F2516927700632DAF /* BusinessData.swift */; };
+		9A9467222516B45400632DAF /* PhysicalHealthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9467212516B45400632DAF /* PhysicalHealthTableViewController.swift */; };
+		9A9467242516B50400632DAF /* MentalHealthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9467232516B50400632DAF /* MentalHealthTableViewController.swift */; };
+		9A9467292516B65200632DAF /* CustomArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9467272516B65200632DAF /* CustomArticleCell.swift */; };
+		9A94672A2516B65200632DAF /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9467282516B65200632DAF /* ArticleCell.xib */; };
+		9A94672D2516B85200632DAF /* ArticleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94672C2516B85200632DAF /* ArticleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,11 @@
 		9A94671925165C8200632DAF /* BusinessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessCell.xib; sourceTree = "<group>"; };
 		9A94671D2516875700632DAF /* IBMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMViewController.swift; sourceTree = "<group>"; };
 		9A94671F2516927700632DAF /* BusinessData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessData.swift; sourceTree = "<group>"; };
+		9A9467212516B45400632DAF /* PhysicalHealthTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalHealthTableViewController.swift; sourceTree = "<group>"; };
+		9A9467232516B50400632DAF /* MentalHealthTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthTableViewController.swift; sourceTree = "<group>"; };
+		9A9467272516B65200632DAF /* CustomArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomArticleCell.swift; sourceTree = "<group>"; };
+		9A9467282516B65200632DAF /* ArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
+		9A94672C2516B85200632DAF /* ArticleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleData.swift; sourceTree = "<group>"; };
 		A7BA3969387DEC3F735E3798 /* Pods-weGLOTogether-weGLOTogetherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weGLOTogether-weGLOTogetherUITests.debug.xcconfig"; path = "Target Support Files/Pods-weGLOTogether-weGLOTogetherUITests/Pods-weGLOTogether-weGLOTogetherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC208D83D47B7931AF7932B0 /* Pods-weGLOTogetherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weGLOTogetherTests.debug.xcconfig"; path = "Target Support Files/Pods-weGLOTogetherTests/Pods-weGLOTogetherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F777946A7EFB172039024695 /* Pods-weGLOTogetherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weGLOTogetherTests.release.xcconfig"; path = "Target Support Files/Pods-weGLOTogetherTests/Pods-weGLOTogetherTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +203,8 @@
 				9A065C672515DBCE00C0B327 /* LocalViewController.swift */,
 				9A065C692515DC0C00C0B327 /* GlobalViewController.swift */,
 				9A94671D2516875700632DAF /* IBMViewController.swift */,
+				9A9467212516B45400632DAF /* PhysicalHealthTableViewController.swift */,
+				9A9467232516B50400632DAF /* MentalHealthTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -203,6 +215,7 @@
 				9A065C352515AC2E00C0B327 /* Main.storyboard */,
 				9A065C3D2515AC3600C0B327 /* LaunchScreen.storyboard */,
 				9A94671C25165C9500632DAF /* CustomBusinessCell */,
+				9A94672B2516B65F00632DAF /* CustomArticleCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				9A94671F2516927700632DAF /* BusinessData.swift */,
+				9A94672C2516B85200632DAF /* ArticleData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,6 +236,15 @@
 				9A94671825165C8200632DAF /* CustomBusinessCell.swift */,
 			);
 			name = CustomBusinessCell;
+			sourceTree = "<group>";
+		};
+		9A94672B2516B65F00632DAF /* CustomArticleCell */ = {
+			isa = PBXGroup;
+			children = (
+				9A9467272516B65200632DAF /* CustomArticleCell.swift */,
+				9A9467282516B65200632DAF /* ArticleCell.xib */,
+			);
+			path = CustomArticleCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A94672A2516B65200632DAF /* ArticleCell.xib in Resources */,
 				9A065C3F2515AC3600C0B327 /* LaunchScreen.storyboard in Resources */,
 				9A065C3C2515AC3600C0B327 /* Assets.xcassets in Resources */,
 				9A94671B25165C8200632DAF /* BusinessCell.xib in Resources */,
@@ -464,15 +488,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A94672D2516B85200632DAF /* ArticleData.swift in Sources */,
+				9A9467292516B65200632DAF /* CustomArticleCell.swift in Sources */,
 				9A065C682515DBCE00C0B327 /* LocalViewController.swift in Sources */,
 				9A065C342515AC2E00C0B327 /* HomeViewController.swift in Sources */,
 				9A94671E2516875700632DAF /* IBMViewController.swift in Sources */,
 				9A9467202516927700632DAF /* BusinessData.swift in Sources */,
 				9A94671A25165C8200632DAF /* CustomBusinessCell.swift in Sources */,
+				9A9467222516B45400632DAF /* PhysicalHealthTableViewController.swift in Sources */,
 				9A065C302515AC2E00C0B327 /* AppDelegate.swift in Sources */,
 				9A065C6A2515DC0C00C0B327 /* GlobalViewController.swift in Sources */,
 				9A065C3A2515AC2E00C0B327 /* weGLOTogether.xcdatamodeld in Sources */,
 				9A065C632515DAC100C0B327 /* OneselfViewController.swift in Sources */,
+				9A9467242516B50400632DAF /* MentalHealthTableViewController.swift in Sources */,
 				9A065C322515AC2E00C0B327 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
