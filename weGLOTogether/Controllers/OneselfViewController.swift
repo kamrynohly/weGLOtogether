@@ -13,9 +13,11 @@ import Alamofire
 class OneselfViewController: UIViewController {
 
     @IBAction func ConnectingTapped(_ sender: Any) {
-        if let url = URL(string: "https://skribbl.io") {
-        UIApplication.shared.open(url)
-    }
+        guard let url = URL(string: "https://skribbl.io") else { return }
+               UIApplication.shared.open(url)
+//        if let url = URL(string: "https://skribbl.io") {
+//        UIApplication.shared.open(url)
+//    }
 }
     
     override func viewDidLoad() {

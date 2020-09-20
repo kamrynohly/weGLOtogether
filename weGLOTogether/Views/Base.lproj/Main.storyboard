@@ -176,7 +176,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="Connecting:" destination="HT2-Ph-rBS" eventType="touchUpInside" id="4nr-pK-4Sb"/>
                                                     <action selector="ConnectingTapped:" destination="HT2-Ph-rBS" eventType="touchUpInside" id="EFl-07-mcT"/>
                                                 </connections>
                                             </button>
@@ -370,10 +369,10 @@
             </objects>
             <point key="canvasLocation" x="1847.826086956522" y="134.59821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Community View Controller-->
         <scene sceneID="BaG-Db-d1E">
             <objects>
-                <viewController id="pZA-nH-8YW" sceneMemberID="viewController">
+                <viewController id="pZA-nH-8YW" customClass="CommunityViewController" customModule="weGLOtogether" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Tt-9B-JmS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -385,15 +384,8 @@
                                 <color key="textColor" red="0.0" green="0.16078431369999999" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdB-WR-Ec0">
-                                <rect key="frame" x="10" y="151" width="394" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="20"/>
-                                <color key="textColor" red="0.36470588240000001" green="0.086274509799999996" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kc5-Fr-JkK">
-                                <rect key="frame" x="34" y="352" width="347" height="380"/>
+                                <rect key="frame" x="20" y="238" width="374" height="437"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
@@ -401,6 +393,9 @@
                         <viewLayoutGuide key="safeArea" id="khi-eO-tle"/>
                     </view>
                     <navigationItem key="navigationItem" id="hIC-zE-D8p"/>
+                    <connections>
+                        <outlet property="mapView" destination="kc5-Fr-JkK" id="9Ag-hT-uaa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jL-PZ-lOJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -440,10 +435,10 @@
             </objects>
             <point key="canvasLocation" x="303" y="118"/>
         </scene>
-        <!--View Controller-->
+        <!--Spend Time View Controller-->
         <scene sceneID="Afe-gy-Yrm">
             <objects>
-                <viewController id="LtF-AG-g6Y" sceneMemberID="viewController">
+                <viewController id="LtF-AG-g6Y" customClass="SpendTimeViewController" customModule="weGLOtogether" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yfi-5z-Ncz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -456,6 +451,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="OnHeadspace:" destination="LtF-AG-g6Y" eventType="touchUpInside" id="cjN-sT-5nQ"/>
                                     <action selector="OnHeadspace:" destination="DGD-MI-sLf" eventType="touchUpInside" id="uVD-SG-BI7"/>
                                 </connections>
                             </button>
@@ -467,6 +463,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="OnCooking:" destination="LtF-AG-g6Y" eventType="touchUpInside" id="9W6-Hr-Wcy"/>
                                     <action selector="OnCooking:" destination="DGD-MI-sLf" eventType="touchUpInside" id="VhM-ac-8f5"/>
                                 </connections>
                             </button>
@@ -479,6 +476,7 @@
                                 </state>
                                 <connections>
                                     <action selector="OnReading:" destination="DGD-MI-sLf" eventType="touchUpInside" id="Ee0-pG-erb"/>
+                                    <action selector="OnReading:" destination="LtF-AG-g6Y" eventType="touchUpInside" id="ycN-i5-tXX"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="E0i-hr-MEt">
@@ -510,6 +508,7 @@
                                 </state>
                                 <connections>
                                     <action selector="OnLearning:" destination="DGD-MI-sLf" eventType="touchUpInside" id="IdZ-i0-OqF"/>
+                                    <action selector="OnLearning:" destination="LtF-AG-g6Y" eventType="touchUpInside" id="tCN-AD-pic"/>
                                 </connections>
                             </button>
                         </subviews>

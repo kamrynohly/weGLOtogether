@@ -13,7 +13,7 @@ import SwiftyJSON
 class SpendTimeViewController: UIViewController {
 
     @IBAction func OnHeadspace(_ sender: Any) {
-        if let url = URL(string: "https://apps.apple.com/us/app/headspace-meditation-sleep/id493145008") {
+        if let url = URL(string: "https://apps.apple.com/us/app/headspace-meditation-sleep/id493145008")  {
             UIApplication.shared.open(url)
         }
     }
