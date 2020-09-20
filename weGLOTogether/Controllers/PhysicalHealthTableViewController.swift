@@ -21,7 +21,7 @@ class PhysicalHealthTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let params : [String : Any] = ["query": "health tips", "api-key": API_KEY]
+        let params : [String : Any] = ["query": "ways to be healthy", "api-key": API_KEY]
                      getNYTAPIData(url: API_URL, parameters: params)
               tableView.register(UINib(nibName: "ArticleCell", bundle: nil), forCellReuseIdentifier: "customArticleCell")
 
@@ -47,6 +47,11 @@ class PhysicalHealthTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let url = URL(string: articlesArray[indexPath.row].websiteAddress) else { return }
+               UIApplication.shared.open(url)
+    }
+    
     func getNYTAPIData(url: String, parameters: [String : Any]) {
 
                        
@@ -57,7 +62,7 @@ class PhysicalHealthTableViewController: UITableViewController {
                                       print("Success! Got the API data.")
                                       
                                       let apiJSON : JSON = JSON(response.result.value!)
-    //                                  print(apiJSON)
+                                      print(apiJSON)
                                       self.interpretNYTData(json: apiJSON)
                                   }
                                   else {
@@ -71,13 +76,17 @@ class PhysicalHealthTableViewController: UITableViewController {
     
     func interpretNYTData(json: JSON) {
         
-        print(json)
         
-        if let leadingPara = Optional(json["response"]["docs"][0]["snippet"].stringValue) {
-            let object = ArticleData()
-            object.leadingParagraph = leadingPara
-            object.title = json["response"]["docs"][0]["headline"]["main"].stringValue
-            articlesArray.append(object)
+        var i = 0
+        while i < 10 {
+            if let leadingPara = Optional(json["response"]["docs"][i]["abstract"].stringValue) {
+                       let object = ArticleData()
+                       object.leadingParagraph = leadingPara
+                       object.title = json["response"]["docs"][i]["headline"]["main"].stringValue
+                object.websiteAddress = json["response"]["docs"][i]["web_url"].stringValue
+                       articlesArray.append(object)
+                   }
+            i += 1
         }
         tableView.reloadData()
     }

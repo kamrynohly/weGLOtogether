@@ -10,6 +10,7 @@ import UIKit
 
 class CustomArticleCell: UITableViewCell {
 
+    @IBOutlet weak var articleImage: UIImageView!
     @IBOutlet weak var articleTitle: UILabel!
     @IBOutlet weak var articleLeadingPara: UILabel!
     

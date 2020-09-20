@@ -12,4 +12,6 @@ import UIKit
 class ArticleData {
     var title = ""
     var leadingParagraph = ""
+    var websiteAddress = ""
+    
 }

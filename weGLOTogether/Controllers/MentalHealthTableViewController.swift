@@ -20,7 +20,7 @@ class MentalHealthTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let params : [String : Any] = ["query": "mental-health tips", "api-key": API_KEY]
+        let params : [String : Any] = ["query": "emotional self care", "api-key": API_KEY]
                getNYTAPIData(url: API_URL, parameters: params)
         tableView.register(UINib(nibName: "ArticleCell", bundle: nil), forCellReuseIdentifier: "customArticleCell")
 
@@ -76,14 +76,17 @@ class MentalHealthTableViewController: UITableViewController {
     
     func interpretNYTData(json: JSON) {
         
-        print(json)
-        
-        if let leadingPara = Optional(json["response"]["docs"][0]["snippet"].stringValue) {
-            let object = ArticleData()
-            object.leadingParagraph = leadingPara
-            object.title = json["response"]["docs"][0]["headline"]["main"].stringValue
-            articlesArray.append(object)
+        var i = 0
+        while i < 10 {
+            if let leadingPara = Optional(json["response"]["docs"][i]["snippet"].stringValue) {
+                       let object = ArticleData()
+                       object.leadingParagraph = leadingPara
+                       object.title = json["response"]["docs"][i]["headline"]["main"].stringValue
+                       articlesArray.append(object)
+                   }
+            i += 1
         }
+       
         tableView.reloadData()
     }
     
