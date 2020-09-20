@@ -30,7 +30,10 @@ class CommunityViewController: UIViewController {
         
         let organizations = [CommunityOrganization(name: "Humane Society", latitude: 41.437960, longtitude: -82.744210, phone: 4196266220),
      CommunityOrganization(name: "Ohio Veteran's Home", latitude: 41.418171, longtitude: -82.688538, phone: 4196252454),
-     CommunityOrganization(name: "Nehemiah Partners of Sandusky", latitude: 41.445520, longtitude: -82.706300, phone: 4196099181)]
+     CommunityOrganization(name: "Nehemiah Partners of Sandusky", latitude: 41.445520, longtitude: -82.706300, phone: 4196099181),
+    CommunityOrganization(name: "Victory Temple Soup Kitchen", latitude: 41.441240, longtitude: -82.711170, phone: 4196278732),
+    CommunityOrganization(name: "Salvation Army", latitude: 41.42051, longtitude: -82.69069, phone: 4196263862)
+        ]
     
         fetchStadiumsOnMap(organizations)
 
